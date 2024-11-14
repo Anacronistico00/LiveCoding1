@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    background-color: #131334;
+    color: #EBEBEB;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+main {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.day {
+    display: inline-block;
+    width: 14%;
+    height: 130px;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.day:hover,
+.day:hover h3 {
+    background-color: darkslateblue;
+}
+
+.day h3 {
+    text-align: center;
+    font-size: 20px;
+    /*Position Absolute perchè il padre è position RELATIVE*/
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+.day.selected {
+    border-color: blueviolet;
+}
+
+.dot {
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+.currentDay {
+    background-color: pink;
+}
+
+.sunday {
+    color: red;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    margin-bottom: 1.5rem;
+}
+
+#addMeeting div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 3.5rem;
+}
+
+form {
+    display: inline;
+}
+
+input {
+    width: 130px;
+    min-height: 36px;
+    background-color: #0c0b1d;
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+input:focus {
+    background-color: darkslateblue;
+}
+
+input:focus::placeholder {
+    color: blueviolet;
+}
+
+#newMeetingDay {
+    display: inline-block;
+    min-height: 40px;
+}
+
+#newMeetingDay.hasDay {
+    font-size: 28px;
+    font-weight: 700;
+    background-color: #0c0b1d;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+#newMeetingName {
+    width: 200px;
+}
+
+#newMeetingTime::-webkit-calendar-picker-indicator {
+    background-color: blueviolet;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+form button {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #EBEBEB;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    min-height: 36px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#appointments {
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 1px;
+    height: 2.5rem;
+}

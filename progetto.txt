@@ -1,0 +1,2 @@
+1- Applicazione Dinamica che genera un calendario perpetuo che si aggiorna giorno per giorno
+2- Per ogni giorno è possibile 
